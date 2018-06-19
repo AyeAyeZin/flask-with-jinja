@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>
+			Flask with Jinja
+		</title>
+		</head>
+		<body>
+			<ul>
+				<img src="{{url_for('static', filename='ssw.jpg')}}">
+				</li>
+				{@ This is commit block. We will setname. @}
+				{% set name="Aye Aye Zin %}
+				{% set user_name="AyeAyeZin"}
+				<li>
+					{{name}}</li>
+				<li>
+					{name}
+				</li>
+				<li>
+					<a href ="http://github.com/{user_name}">Github</a>
+				</li>
+				<li>
+					<a href ="http://ayeayezin.herokuapp.com">
+						Heroku</a>
+				</li>
+			</ul>
+		</body>
+</html>
+
+
+
+	
